@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://62.113.114.9:5432
+    username: neoflex
+    password: Neoflex
+    driver-class-name: org.postgresql.Driver
+    hikari.data-source-properties: stringtype=unspecified
+  jpa.hibernate.ddl-auto: create-drop
+
