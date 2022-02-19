@@ -1,6 +1,6 @@
 package com.example.neoflex.Hack30.controller;
 
-import com.example.neoflex.Hack30.entity.CurrencyRate;
+import com.example.neoflex.Hack30.dao.CurrencyRate;
 import com.example.neoflex.Hack30.repo.CurrencyRateRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

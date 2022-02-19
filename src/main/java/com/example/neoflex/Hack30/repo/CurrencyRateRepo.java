@@ -1,6 +1,6 @@
 package com.example.neoflex.Hack30.repo;
 
-import com.example.neoflex.Hack30.entity.CurrencyRate;
+import com.example.neoflex.Hack30.dao.CurrencyRate;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
