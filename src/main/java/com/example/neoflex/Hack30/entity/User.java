@@ -2,13 +2,13 @@ package com.example.neoflex.Hack30.entity;
 
 import org.jetbrains.annotations.NotNull;
 
-import javax.persistence.*;
+//import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 
-@Entity
+//@Entity
 public class User {
-    @Id
-    @Column(name = "id", nullable = false)
+//    @Id
+//    @Column(name = "id", nullable = false)
     private Long id;
 
     @NotNull

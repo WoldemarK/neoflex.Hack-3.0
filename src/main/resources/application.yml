@@ -1,9 +1,27 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://62.113.114.9:5432
-    username: neoflex
-    password: Neoflex
-    driver-class-name: org.postgresql.Driver
-    hikari.data-source-properties: stringtype=unspecified
-  jpa.hibernate.ddl-auto: create-drop
+#  datasource:
+#    url: jdbc:postgresql://62.113.114.9:5432/neodb
+#    username: neouser
+#    password: Neoflex
+#    driver-class-name: org.postgresql.Driver
+#    hikari.data-source-properties: stringtype=unspecified
 
+#  jpa.hibernate.ddl-auto: create-drop
+
+#  kafka.consumer:
+#    group-id: consumergroup1
+#    bootstrap-servers: http://pkc-xmzwx.europe-central2.gcp.confluent.cloud:9092
+#    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+#mykafka:
+#  topic-name: rht.candles
+
+#logging:
+#  level:
+#    root: debug
+  security:
+    user:
+      password: qwerty123
+#      name: user
+security.enable-csrf: false
