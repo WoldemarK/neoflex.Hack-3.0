@@ -21,6 +21,12 @@ public class AuthConfig extends WebSecurityConfigurerAdapter {
     @Value("${security.enable-csrf}")
     private boolean csrfEnabled;
 
+    @Value("${security.user.name:user}")
+    private String user;
+
+    @Value("${security.user.password:qwerty123}")
+    private String pwd;
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
@@ -28,10 +34,9 @@ public class AuthConfig extends WebSecurityConfigurerAdapter {
 //                .passwordEncoder(new BCryptPasswordEncoder())
                 .and()
                 .inMemoryAuthentication()
-                .withUser("user")
-                .password("qwerty123")
-                .authorities("ROLE_USER")
-                ;
+                .withUser(user)
+                .password(pwd)
+                .authorities("ROLE_USER");
     }
 
     @Override
